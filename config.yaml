@@ -1,0 +1,13 @@
+name: "Israeli Bank FireFly iii Importer"
+description: "Using Israeli bank scrapper and import the data into free and open source FireFly iii."
+version: "0.0.1"
+slug: "israeli-bank-firefly-importer"
+init: false
+arch:
+- aarch64
+- amd64
+- armhf
+- armv7
+- i386
+map:
+  - "config:rw"
