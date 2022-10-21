@@ -1,0 +1,1 @@
+# israeli-bank-firefly-importer-hass-addon
