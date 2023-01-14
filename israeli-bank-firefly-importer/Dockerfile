@@ -8,11 +8,18 @@ ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
 
 WORKDIR /app
 
-RUN npm i israeli-bank-firefly-importer
+COPY run.sh /
+RUN chmod a+x /run.sh
 
-# the rest of your dockerfile here
-RUN mkdir /config/israeli-bank-firefly-importer
+RUN npm ci -g israeli-bank-firefly-importer@${BUILD_VERSION}
 
-ENV CONFIG_PATH='/config/israeli-bank-firefly-importer'
+# Add user so we don't need --no-sandbox.
+RUN addgroup -S pptruser && adduser -S -G pptruser pptruser \
+    && mkdir -p /home/pptruser/Downloads /app \
+    && chown -R pptruser:pptruser /home/pptruser \
+    && chown -R pptruser:pptruser /app
 
-CMD ["israeli-bank-firefly-importer"]
+# Run everything after as non-privileged user.
+USER pptruser
+
+CMD ["/run.sh"]
