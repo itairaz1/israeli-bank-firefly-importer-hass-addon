@@ -11,7 +11,7 @@ WORKDIR /app
 COPY run.sh /
 RUN chmod a+x /run.sh
 
-RUN npm ci -g israeli-bank-firefly-importer@${BUILD_VERSION}
+RUN npm i -g israeli-bank-firefly-importer@${BUILD_VERSION}
 
 # Add user so we don't need --no-sandbox.
 RUN addgroup -S pptruser && adduser -S -G pptruser pptruser \
