@@ -19,3 +19,6 @@ Home assistant addon for [Israeli Bank Firefly Importer](https://github.com/itai
       7. Use the value as `firefly-token-api`
    3. cron - Set [CRON](https://crontab.guru/) to schedule a scrap and import (for example `0 6 * * *` every day at 6am).
 5. Hit start at `israeli-bank-firefly-importer` add-on main page and then watch the logs and Log tab.
+
+[repository-badge]: https://img.shields.io/badge/Add%20repository%20to%20my-Home%20Assistant-41BDF5?logo=home-assistant&style=for-the-badge
+[repository-url]: https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fitairaz1%2Fisraeli-bank-firefly-importer-hass-addon
