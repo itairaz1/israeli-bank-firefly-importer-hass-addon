@@ -6,7 +6,7 @@ Home assistant addon for [Israeli Bank Firefly Importer](https://github.com/itai
    1. Automatic: [![Add repository on my Home Assistant][repository-badge]][repository-url]
    2. Manually: Settings -> Add-ons -> Add-on Store -> top right button (⫶) -> Repositories -> Add this repo.
 2. In the Add-ons Store: click on `israeli-bank-firefly-importer` add-on and Install.
-3. Create directory named `israeli-bank-firefly-importer` in home assistant `config` directory and add `config.yaml` file inside, you can use the [basic template](https://github.com/itairaz1/israeli-bank-firefly-importer/blob/main/config/basic.template.config.yaml).
+3. Create directory named `israeli-bank-firefly-importer` in home assistant `config` directory and add `config.yaml` file inside, you can use the [basic template](https://github.com/itairaz1/israeli-bank-firefly-importer-hass-addon/blob/main/israeli-bank-firefly-importer/basic.template.config.yaml).
 4. In home assistant israeli-bank-firefly-importer add-on move to Configuration tab set the config as following:
    1. firefly-base-url - Set the URL of filefly
    2. firefly-token-api - Set the Toke API, if you don't own, please follow:
