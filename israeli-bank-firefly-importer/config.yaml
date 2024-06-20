@@ -1,6 +1,6 @@
 name: "Israeli Bank FireFly iii Importer"
 description: "Using Israeli bank scrapper and import the data into free and open source FireFly iii."
-version: "1.5.0"
+version: "1.5.1"
 slug: "israeli-bank-firefly-importer"
 init: false
 arch:
